@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Weather from "./Weather";
+import WeatherTemp from "./WeatherTemp";
+import Description from "./Description";
+import Forecast from "./Forecast";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="box">
+          {" "}
+          <Weather />
+          <h1>Hong Kong</h1>
+          <WeatherTemp />
+          <Description />
+          <Forecast />
+        </div>
+      </div>
+      Open-source code by Angela Jazz
     </div>
   );
 }

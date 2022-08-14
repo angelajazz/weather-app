@@ -17,7 +17,10 @@ function App() {
           <Forecast />
         </div>
       </div>
-      Open-source code by Angela Jazz
+      <a href="https://github.com/angelajazz/weather-app">
+        Open-source code
+      </a>{" "}
+      by Angela Jazz
     </div>
   );
 }

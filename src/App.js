@@ -1,5 +1,5 @@
 import "./App.css";
-import Weather from "./Weather";
+import SearchWeather from "./SearchWeather";
 import WeatherTemp from "./WeatherTemp";
 import Description from "./Description";
 import Forecast from "./Forecast";
@@ -10,7 +10,7 @@ function App() {
       <div className="container">
         <div className="box">
           {" "}
-          <Weather />
+          <SearchWeather />
           <h1>Hong Kong</h1>
           <WeatherTemp />
           <Description />

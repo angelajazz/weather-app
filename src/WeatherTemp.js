@@ -1,21 +1,29 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
+import CurrentDate from "./CurrentDate";
 
-export default function WeatherTemp() {
+export default function WeatherTemp(props) {
   return (
-    <div className="App">
-      <div className="row row-cols-3">
-        <div className="col2">
-          <img
-            src="http://openweathermap.org/img/wn/01d@2x.png"
-            id="weather-icon"
-            width="100px"
-            alt="icon weather"
+    <div className="Container">
+      <div>
+        <h1>{props.data.city}</h1>
+        <span>
+          <CurrentDate date={props.data.date} />
+        </span>
+        <h5>{props.data.description}</h5>
+        <span>
+          <WeatherIcon
+            code={props.data.icon}
+            alt={props.data.description}
+            size={50}
           />
-        </div>
-        <div className="col2">
-          <h2>30º</h2>
-        </div>
-        <div class="col2">Sunny</div>
+          <h2>{Math.round(props.data.temperature)}°C</h2>
+        </span>
+
+        <span>
+          Humidity: {props.data.humidity}% | Wind: {props.data.wind} m/s
+        </span>
+        <br />
       </div>
     </div>
   );

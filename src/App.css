@@ -30,6 +30,10 @@ li {
   list-style: none;
 }
 
+footer {
+  font-size: 20px;
+}
+
 .App {
   text-align: center;
   background-color: transparent;
@@ -72,18 +76,14 @@ li {
   }
 }
 
-.ForecastList {
-  display: flex;
-  justify-content: center;
+.currentday {
+  font-size: 28px;
 }
-
-.f-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+.Max-Temperature {
+  font-size: 20px;
 }
-
 .Min-Temperature {
+  font-size: 20px;
   opacity: 0.6;
   margin-left: 5px;
 }

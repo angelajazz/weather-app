@@ -9,8 +9,10 @@ function App() {
           <SearchWeather defaultCity="Hong Kong" />
         </div>
       </div>
-      <a href="https://github.com/angelajazz/weather-app">Open-source code</a>{" "}
-      by Angela Jazz
+      <footer>
+        <a href="https://github.com/angelajazz/weather-app">Open-source code</a>{" "}
+        by Angela Jazz
+      </footer>
     </div>
   );
 }
